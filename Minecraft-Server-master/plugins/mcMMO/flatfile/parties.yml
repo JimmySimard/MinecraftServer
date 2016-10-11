@@ -1,0 +1,17 @@
+lurons:
+  Leader: garythemastr
+  Locked: true
+  Level: 10
+  Xp: 960
+  Ally: ''
+  ExpShareMode: NONE
+  ItemShareMode: NONE
+  ItemShareType:
+    LOOT: true
+    MINING: true
+    HERBALISM: true
+    WOODCUTTING: true
+    MISC: true
+  Members:
+  - garythemastr
+  - killeur134
