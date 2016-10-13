@@ -14,17 +14,17 @@ config-version: 8
 settings:
   debug: false
   save-user-cache-on-stop-only: false
-  moved-too-quickly-threshold: 100.0
   filter-creative-items: true
   moved-wrongly-threshold: 0.0625
+  moved-too-quickly-threshold: 100.0
   late-bind: false
-  bungeecord: false
   timeout-time: 60
   restart-on-crash: true
   restart-script: ./start.sh
-  sample-count: 12
+  bungeecord: false
   user-cache-size: 1000
   player-shuffle: 0
+  sample-count: 12
   int-cache-limit: 1024
   attribute:
     maxHealth:
@@ -58,11 +58,11 @@ stats:
 world-settings:
   default:
     verbose: true
-    enable-zombie-pigmen-portal-spawns: true
     merge-radius:
       item: 2.5
       exp: 3.0
     item-despawn-rate: 6000
+    enable-zombie-pigmen-portal-spawns: true
     arrow-despawn-rate: 1200
     hanging-tick-frequency: 100
     wither-spawn-sound-radius: 0
@@ -70,18 +70,17 @@ world-settings:
     zombie-aggressive-towards-villager: true
     chunks-per-tick: 650
     clear-tick-list: false
+    nerf-spawner-mobs: false
     mob-spawn-range: 4
-    entity-activation-range:
-      animals: 32
-      monsters: 32
-      misc: 16
     entity-tracking-range:
       players: 48
       animals: 48
       monsters: 48
       misc: 32
       other: 64
-    nerf-spawner-mobs: false
+    max-bulk-chunks: 10
+    random-light-updates: false
+    save-structure-info: true
     growth:
       cactus-modifier: 100
       cane-modifier: 100
@@ -95,15 +94,11 @@ world-settings:
       sprint-exhaustion: 0.8
       combat-exhaustion: 0.3
       regen-exhaustion: 3.0
-    save-structure-info: true
-    max-bulk-chunks: 10
+    entity-activation-range:
+      animals: 32
+      monsters: 32
+      misc: 16
     max-tnt-per-tick: 100
-    random-light-updates: false
-    hopper-alt-ticking: false
-    ticks-per:
-      hopper-transfer: 8
-      hopper-check: 8
-    hopper-amount: 1
     anti-xray:
       enabled: true
       engine-mode: 1
@@ -124,7 +119,12 @@ world-settings:
       replace-blocks:
       - 1
       - 5
-    seed-village: 10387312
-    seed-feature: 14357617
+    hopper-alt-ticking: false
+    ticks-per:
+      hopper-transfer: 8
+      hopper-check: 8
+    hopper-amount: 1
     dragon-death-sound-radius: 0
     max-entity-collisions: 8
+    seed-village: 10387312
+    seed-feature: 14357617
